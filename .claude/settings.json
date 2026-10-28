@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "Agent",
+      "Write(/runs/**)",
+      "Edit(/runs/**)",
+      "Write(/plans/**)",
+      "Edit(/plans/**)",
+      "Bash(python tools/plan_day.py:*)",
+      "Bash(python tools/check_plan.py:*)",
+      "Bash(python tools/check_package.py:*)",
+      "Bash(python tools/make_handoff.py:*)",
+      "Bash(python tools/assemble.py:*)",
+      "Bash(python tools/check_video.py:*)",
+      "Bash(python tools/frames.py:*)"
+    ],
+    "deny": [
+      "Read(**/.env*)",
+      "Write(/rules/**)",
+      "Write(/tools/**)",
+      "Write(/config/**)"
+    ]
+  }
+}

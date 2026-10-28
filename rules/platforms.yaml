@@ -1,0 +1,38 @@
+# Подписи по площадкам (check_package.py, раздел texts). Длина считается вместе с хештегами.
+# Где лимит площадки известен точно — он в комментарии; остальные числа — наши правила (короче = лучше).
+brand_hashtag: "#кухнянараздва"
+platforms:
+  youtube:
+    require_title: true
+    title_max: 100          # лимит YouTube для заголовка — 100 символов
+    text_min: 50
+    text_max: 1500          # наше правило (лимит описания YouTube — 5000)
+    hashtags_max: 5
+    require_brand_hashtag: true
+  tiktok:
+    text_min: 30
+    text_max: 1000
+    hashtags_max: 5
+    require_brand_hashtag: true
+  instagram:
+    text_min: 80
+    text_max: 2000          # лимит подписи Instagram — 2200 символов
+    hashtags_max: 5
+    require_brand_hashtag: true
+  facebook:
+    text_min: 50
+    text_max: 2000
+    hashtags_max: 3
+    require_brand_hashtag: true
+  telegram:
+    text_min: 30
+    text_max: 1000          # подпись к видео в Telegram — до 1024 символов
+    hashtags_max: 3
+    require_brand_hashtag: false
+    require_recipe_post: true
+    recipe_post_max: 4000   # обычное сообщение Telegram — до 4096 символов
+  vk:
+    text_min: 200
+    text_max: 4000
+    hashtags_max: 5
+    require_brand_hashtag: true

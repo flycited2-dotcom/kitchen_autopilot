@@ -1,0 +1,6 @@
+# Рецепт (проверяет tools/check_package.py, раздел recipe).
+units: [г, кг, мл, л, шт, ст. л., ч. л., щепотка, зубчик, пучок, веточка, стакан, ломтик, банка]
+no_qty_units: [по вкусу, для подачи]   # при них qty = null
+min_ingredients: 2
+max_ingredients: 15
+max_steps: 10

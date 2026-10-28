@@ -1,0 +1,18 @@
+# Рубрики канала. max_time_min / max_ingredients проверяет tools/check_package.py по рецепту.
+recept_30s:
+  title: Рецепт за 30 секунд
+  max_time_min: 40
+iz_togo_chto_est:
+  title: Из того, что есть
+  max_time_min: 30
+  max_ingredients: 6
+zavtrak_10:
+  title: Завтрак за 10 минут
+  max_time_min: 10
+  meals: [завтрак]
+sezonnoe:
+  title: Сезонное
+  max_time_min: 45
+byudzhetno:
+  title: Бюджетно
+  max_time_min: 40

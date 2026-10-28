@@ -1,0 +1,2 @@
+# PowerShell 5.1 на Windows: CRLF и UTF-8 с BOM (BOM уже в файлах)
+*.ps1 text eol=crlf

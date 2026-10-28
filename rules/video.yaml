@@ -1,0 +1,17 @@
+# Ролик: раскадровка (check_package.py, раздел video_brief) и готовый файл (check_video.py).
+width: 1080
+height: 1920
+fps: 30
+fps_tolerance: 0.5
+min_scenes: 4
+max_scenes: 12
+min_scene_seconds: 2
+max_scene_seconds: 6        # не длиннее клипа, который отдаёт Grok, — сверить с интерфейсом Grok и поправить
+min_total_seconds: 15
+max_total_seconds: 59
+duration_tolerance: 0.5
+hook_first_kinds: [hero, serving]   # первая сцена — готовое блюдо крупно (хук)
+title_max_length: 32
+min_description_length: 150
+voice_words_per_second_max: 2.5     # наше правило темпа озвучки; подобрать по первым роликам
+max_file_mb: 50                     # с запасом под будущую загрузку ботом в Telegram (лимит Bot API — 50 МБ)

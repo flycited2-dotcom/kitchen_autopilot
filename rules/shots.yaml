@@ -1,0 +1,13 @@
+# Раскадровка фото (проверяет tools/check_package.py, раздел shots).
+target_shots: 20          # владелец: «20 кадров каждого блюда с разных ракурсов»
+min_shots: 16
+max_shots: 24
+kinds: [hero, ingredients, process, detail, serving, cover]
+required_kinds: [hero, ingredients, process, serving, cover]
+min_distinct_angles: 5
+min_prompt_length: 60
+# Запрет текста на картинках пишется ОДИН раз — в style_block; в промптах кадров такие слова запрещены,
+# чтобы генератор не «увидел» слово text и не нарисовал надпись.
+style_block_must_contain: ["no text", "no logos", "no watermarks"]
+prompt_forbidden_words: [text, texts, caption, captions, logo, logos, watermark, watermarks, letters,
+                         lettering, typography, signage, signboard]

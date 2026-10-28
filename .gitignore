@@ -1,0 +1,12 @@
+# Рабочие данные владельца — только на ПК
+runs/
+plans/
+logs/
+media/music/*
+!media/music/README.md
+# Секреты
+.env
+# Python
+__pycache__/
+.pytest_cache/
+.venv/

@@ -1,0 +1,29 @@
+# Параметры сборки ролика (tools/assemble.py) и подписи пакетов (tools/make_handoff.py).
+# Размер кадра и частота — в rules/video.yaml (один источник правды для сборки и проверки).
+brand: Кухня на раз-два
+music_dir: media/music        # только лицензированные треки; выбор — детерминированно по id блюда
+audio:
+  clip_volume: 0.35           # родной звук сцен от Grok (шкворчание, нож) под озвучкой
+  voice_volume: 1.0
+  music_volume: 0.12
+  voice_delay_ms: 300         # озвучка начинается чуть позже первого кадра
+  fade_out_seconds: 1.5
+  loudness_lufs: -14
+encode:
+  crf: 20
+  preset: medium
+fonts:                        # первый существующий файл; нужен шрифт с кириллицей
+  - C:/Windows/Fonts/arialbd.ttf
+  - C:/Windows/Fonts/arial.ttf
+  - /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+  - /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+title:                        # титры сцен
+  font_size: 64
+  y_ratio: 0.74               # центр плашки — на 74% высоты кадра
+  max_width_ratio: 0.86
+  padding: 28
+  radius: 24
+  plate_opacity: 170          # 0–255
+cover:
+  font_size: 92
+  y_ratio: 0.13
