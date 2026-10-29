@@ -55,7 +55,7 @@ def test_voice_and_texts(tmp_path, capsys):
     make_handoff.main([str(folder), "--root", str(root)])
     voice = _read(folder / "ready" / "3_озвучка.txt")
     assert "Сцена 01 (4 с): Обед за 25 минут — боул с тунцом!" in voice
-    assert voice.rstrip().endswith("Сохрани рецепт и подпишись!")
+    assert voice.rstrip().endswith("Сохрани рецепт, чтобы не потерять!")
     youtube = _read(folder / "ready" / "4_тексты" / "YouTube.txt")
     assert youtube.startswith("ЗАГОЛОВОК:\nБоул с тунцом за 25 минут")
     assert "#кухнянараздва #рецепт #shorts" in youtube
