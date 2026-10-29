@@ -10,3 +10,5 @@ media/music/*
 __pycache__/
 .pytest_cache/
 .venv/
+# Архивы прогонов для переноса на ПК
+runs-*.zip
